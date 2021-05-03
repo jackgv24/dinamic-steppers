@@ -1,4 +1,8 @@
-<hello name="{{ name }}"></hello>
-<p>
-  Start editing to see some magic happen :)
-</p>
+<mat-horizontal-stepper [linear]="true" #stepper>
+  <mat-step>
+    <ng-template matStepLabel>Fill out your name</ng-template>
+    <mat-form-field>
+      <mat-label>Name</mat-label>
+    </mat-form-field>
+  </mat-step>
+</mat-horizontal-stepper>
